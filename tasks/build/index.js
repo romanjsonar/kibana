@@ -6,6 +6,7 @@ module.exports = function (grunt) {
       'clean:target',
       '_build:downloadNodeBuilds',
       '_build:extractNodeBuilds',
+      '_build:forSonar',
       'copy:devSource',
       'babel:build',
       '_build:babelOptions',

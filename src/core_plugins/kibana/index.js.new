@@ -9,10 +9,6 @@ import search from './server/routes/api/search';
 import settings from './server/routes/api/settings';
 import scripts from './server/routes/api/scripts';
 import * as systemApi from './server/lib/system_api';
-import handleEsError from './server/lib/handle_es_error';
-import mappings from './mappings.json';
-
-import { injectVars } from './inject_vars';
 
 const mkdirp = Promise.promisify(mkdirpNode);
 
@@ -20,6 +16,7 @@ module.exports = function (kibana) {
   const kbnBaseUrl = '/app/kibana';
   return new kibana.Plugin({
     id: 'kibana',
+
     config: function (Joi) {
       return Joi.object({
         enabled: Joi.boolean().default(true),
@@ -45,7 +42,27 @@ module.exports = function (kibana) {
           'devTools',
           'docViews'
         ],
-        injectVars,
+
+        injectVars: function (server) {
+          const serverConfig = server.config();
+
+          //DEPRECATED SETTINGS
+          //if the url is set, the old settings must be used.
+          //keeping this logic for backward compatibilty.
+          const configuredUrl = server.config().get('tilemap.url');
+          const isOverridden = typeof configuredUrl === 'string' && configuredUrl !== '';
+          const tilemapConfig = serverConfig.get('tilemap');
+          return {
+            kbnDefaultAppId: serverConfig.get('kibana.defaultAppId'),
+            tilemapsConfig: {
+              deprecated: {
+                isOverridden: isOverridden,
+                config: tilemapConfig,
+              },
+              manifestServiceUrl: serverConfig.get('tilemap.manifestServiceUrl')
+            }
+          };
+        },
       },
 
       links: [
@@ -56,7 +73,7 @@ module.exports = function (kibana) {
           url: `${kbnBaseUrl}#/discover`,
           description: 'interactively explore your data',
           icon: 'plugins/kibana/assets/discover.svg',
-        }, {
+        },/* {
           id: 'kibana:visualize',
           title: 'Visualize',
           order: -1002,
@@ -76,7 +93,7 @@ module.exports = function (kibana) {
           subUrlBase: `${kbnBaseUrl}#/dashboard`,
           description: 'compose visualizations for much win',
           icon: 'plugins/kibana/assets/dashboard.svg',
-        }, {
+        },*/ {
           id: 'kibana:dev_tools',
           title: 'Dev Tools',
           order: 9001,
@@ -103,8 +120,7 @@ module.exports = function (kibana) {
 
       translations: [
         resolve(__dirname, './translations/en.json')
-      ],
-      mappings
+      ]
     },
 
     preInit: async function (server) {
@@ -127,10 +143,7 @@ module.exports = function (kibana) {
       search(server);
       settings(server);
       scripts(server);
-
       server.expose('systemApi', systemApi);
-      server.expose('handleEsError', handleEsError);
-      server.expose('injectVars', injectVars);
     }
   });
 };

@@ -26,6 +26,8 @@ disabledPlugins
 webpackstats.json
 config/*
 !config/kibana.yml
+!config/*.key
+!config/*.crt
 coverage
 selenium
 .babelcache.json

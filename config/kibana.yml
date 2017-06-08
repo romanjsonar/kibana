@@ -84,6 +84,7 @@ elasticsearch.requestTimeout: 600000
 
 # Enables you specify a file where Kibana stores log output.
 #logging.dest: stdout
+logging.dest: /var/log/sonard/sonar-kibana.log
 
 # Set the value of this setting to true to suppress all logging output.
 #logging.silent: false

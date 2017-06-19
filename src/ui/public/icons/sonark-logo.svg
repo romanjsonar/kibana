@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 163.83 199.16001"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="sonark-logo.svg"
+   width="163.83"
+   height="199.16002">
+  <metadata
+     id="metadata3475">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>SonarK_Logo_FINAL (white background)</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1198"
+     inkscape:window-height="729"
+     id="namedview3473"
+     showgrid="false"
+     inkscape:zoom="1.4621312"
+     inkscape:cx="83.255848"
+     inkscape:cy="44.148995"
+     inkscape:window-x="571"
+     inkscape:window-y="90"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1"
+     showborder="true"
+     fit-margin-top="40"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs3415">
+    <style
+       id="style3417">.cls-1{fill:#56698f;}.cls-2,.cls-4,.cls-5,.cls-6,.cls-7{fill:#fff;}.cls-10,.cls-2,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{stroke:#56698f;stroke-miterlimit:10;}.cls-2{stroke-width:4px;}.cls-3{fill:#001d43;}.cls-10,.cls-4{stroke-width:1.9px;}.cls-5{stroke-width:2.52px;}.cls-6{stroke-width:1.28px;}.cls-7,.cls-8{stroke-width:1px;}.cls-10,.cls-8,.cls-9{fill:none;}</style>
+  </defs>
+  <title
+     id="title3419">SonarK_Logo_FINAL (white background)</title>
+  <path
+     inkscape:connector-curvature="0"
+     class="cls-1"
+     d="m 88.123647,139.70282 q 5.13,17.58 10.25,35.17 c 0.28,1 0.55,1.49 1.760003,1.53"
+     id="path3429-5"
+     style="fill:#56698f" />
+  <path
+     class="cls-1"
+     d="m 105.18862,121.20632 a 2.43,2.3249013 9.783962 0 0 7.5e-4,1.40789 c 12.86279,0.84916 25.73217,1.71887 38.59647,2.50032 1.22503,0.0753 1.13428,0.77812 1.37351,1.45044 a 6.14,5.8744419 9.783962 0 0 6.24291,3.98915 6.26,5.9892518 9.783962 0 0 5.49598,-4.56681"
+     id="path3425-5"
+     inkscape:connector-curvature="0"
+     style="fill:#56698f"
+     inkscape:transform-center-x="1.8858567"
+     inkscape:transform-center-y="0.54394442" />
+  <path
+     class="cls-1"
+     d="m 105.08001,121.69999 c 0,1.28 -1.23,2.7 -0.41,3.67 0.69,0.82 2.24,0.93 3.42,1.34 l 25.36,8.84 c 0.75,0.26 1.3,0.52 2,-0.39 a 6,6 0 0 1 8.85,-1.08 c 2.74,2.34 2.84,6.24 0.24,9 l -10.21,-4.26 c 0.2,-1.06 -0.21,-1.58 -1.27,-1.92 -3.43,-1.1 -6.82,-2.36 -10.24,-3.5 -1.16,-0.39 -2.24,-1.12 -3.55,-0.92 l -13,-5.36 c -2.49,-1 -2.48,-1 -3.37,1.56 a 0.63,0.63 0 0 0 0,0.17"
+     id="path3421"
+     inkscape:connector-curvature="0"
+     style="fill:#56698f" />
+  <path
+     class="cls-1"
+     d="m 0.14000792,138.62999 c 0.5,-0.29 0.5,-0.86 0.71,-1.3 a 8.22,8.22 0 0 1 13.99999908,-1.46 1.76,1.76 0 0 0 2.36,0.75 q 20.14,-6.35 40.31,-12.61 l 0.9,2.65 -30.37,9.55 q -5.12,1.61 -10.25,3.16 c -0.84,0.25 -1.28,0.55 -1.3,1.6"
+     id="path3423"
+     inkscape:connector-curvature="0"
+     style="fill:#56698f" />
+  <path
+     class="cls-1"
+     d="m 105.08001,121.79313 a 2.43,2.5719374 0 0 1 0.24,-1.53469 c 12.82,1.49236 25.65,2.96355 38.46,4.52999 1.22,0.14818 1.25,-0.63504 1.6,-1.32301 a 6.14,6.4986401 0 0 1 6.83,-3.17523 6.26,6.6256493 0 0 1 4.64,6.01177"
+     id="path3425"
+     inkscape:connector-curvature="0"
+     style="fill:#56698f" />
+  <path
+     class="cls-1"
+     d="m 73.610007,94.979991 q -5.13,-17.58 -10.25,-35.17 c -0.28,-1 -0.55,-1.49 -1.76,-1.53"
+     id="path3429"
+     inkscape:connector-curvature="0"
+     style="fill:#56698f" />
+  <path
+     class="cls-1"
+     d="m 59.250007,101.71999 c -0.25,0 -0.47,0 -0.38,-0.32 0.28,-0.06 0.32,0.14 0.38,0.32 z"
+     id="path3431"
+     inkscape:connector-curvature="0"
+     style="fill:#56698f" />
+  <path
+     class="cls-1"
+     d="m 15.640007,89.629991 0.1,0.37 -0.36,-0.12 z"
+     id="path3433"
+     inkscape:connector-curvature="0"
+     style="fill:#56698f" />
+  <path
+     class="cls-1"
+     d="M 140.39001,144.70999"
+     id="path3435"
+     inkscape:connector-curvature="0"
+     style="fill:#56698f" />
+  <circle
+     class="cls-2"
+     cx="80.26001"
+     cy="118.48"
+     r="43.73"
+     id="circle3437"
+     style="fill:#ffffff;fill-opacity:1;stroke:#56698f;stroke-width:4px;stroke-miterlimit:10" />
+  <path
+     class="cls-3"
+     d="m 55.970007,91.319991 14.9,0 0,21.809999 18.51,-21.809999 17.690003,0 -20.340003,23.109999 21.000003,30.64 -17.860003,0 -13.51,-20 -5.45,6.07 0,13.9 -14.94,0 z"
+     id="path3439"
+     inkscape:connector-curvature="0"
+     style="fill:#001d43" />
+  <circle
+     class="cls-4"
+     cx="19.640015"
+     cy="63.939995"
+     r="11.72"
+     id="circle3441"
+     style="fill:#ffffff;stroke:#56698f;stroke-width:1.89999998px;stroke-miterlimit:10" />
+  <circle
+     class="cls-4"
+     cx="110.47"
+     cy="55.899994"
+     r="14.95"
+     id="circle3443"
+     style="fill:#ffffff;stroke:#56698f;stroke-width:1.89999998px;stroke-miterlimit:10" />
+  <circle
+     class="cls-4"
+     cx="49.76001"
+     cy="186.49001"
+     r="11.72"
+     id="circle3445"
+     style="fill:#ffffff;stroke:#56698f;stroke-width:1.89999998px;stroke-miterlimit:10" />
+  <circle
+     class="cls-5"
+     cx="147.04001"
+     cy="166.14999"
+     r="15.53"
+     id="circle3447"
+     style="fill:#ffffff;stroke:#56698f;stroke-width:2.51999998px;stroke-miterlimit:10" />
+  <circle
+     class="cls-6"
+     cx="8.5"
+     cy="140.95"
+     r="7.8600001"
+     id="circle3449"
+     style="fill:#ffffff;stroke:#56698f;stroke-width:1.27999997px;stroke-miterlimit:10" />
+  <circle
+     class="cls-1"
+     cx="4.6000061"
+     cy="86.689987"
+     r="4.3600001"
+     id="circle3451"
+     style="fill:#56698f" />
+  <circle
+     class="cls-7"
+     cx="140.44"
+     cy="139.01001"
+     r="6.1300001"
+     id="circle3463"
+     style="fill:#ffffff;stroke:#56698f;stroke-width:1px;stroke-miterlimit:10" />
+  <circle
+     class="cls-7"
+     cx="89.440002"
+     cy="64.48999"
+     r="6.1300001"
+     id="circle3465"
+     style="fill:#ffffff;stroke:#56698f;stroke-width:1px;stroke-miterlimit:10" />
+  <line
+     class="cls-8"
+     x1="88.440002"
+     y1="70.619995"
+     x2="87.02002"
+     y2="75.659988"
+     id="line3467"
+     style="fill:none;stroke:#56698f;stroke-width:1px;stroke-miterlimit:10" />
+  <line
+     class="cls-9"
+     x1="8.960022"
+     y1="88.289993"
+     x2="40"
+     y2="101.38999"
+     id="line3469"
+     style="fill:none;stroke:#56698f;stroke-miterlimit:10" />
+  <line
+     class="cls-10"
+     x1="133.57001"
+     y1="158.41"
+     x2="114.91"
+     y2="145.14"
+     id="line3471"
+     style="fill:none;stroke:#56698f;stroke-width:1.89999998px;stroke-miterlimit:10" />
+</svg>

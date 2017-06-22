@@ -16,7 +16,6 @@
               )
             </span>
           </h5>
-
           <div class="clearfix"></div>
 
           <div ng-if="field.details.error" class="discover-field-details-error">{{field.details.error}}</div>
@@ -51,4 +50,10 @@
           <span class="discover-field-vis-warning" ng-show="warnings.length" tooltip="{{warnings.join(' ')}}">
           ( {{::warnings.length}} <ng-pluralize count="warnings.length" when="{'1':'warning', 'other':'warnings'}"></ng-pluralize> <i aria-hidden="true" class="fa fa-warning"></i> )
           </span>
+      </a>
+      <a
+        ng-click="toggleFullDetails(field)"
+        class="sidebar-item-button primary">
+        <span ng-show="searchButtonText == ''"><md-progress-circular md-diameter="20" mode="indeterminate"></md-progress-circular></span>
+        {{searchButtonText}}
       </a>

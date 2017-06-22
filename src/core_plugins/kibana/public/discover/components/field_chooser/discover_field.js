@@ -9,7 +9,7 @@ const app = uiModules.get('apps/discover');
 
 
 
-app.directive('discoverField', function ($compile) {
+app.directive('discoverField', function ($compile, $timeout) {
   return {
     restrict: 'E',
     template: html,
@@ -21,12 +21,14 @@ app.directive('discoverField', function ($compile) {
       onRemoveField: '=',
       onShowDetails: '=',
     },
+
     link: function ($scope, $elem) {
       let detailsElem;
       let detailScope;
 
 
       const init = function () {
+        $scope.searchButtonText = 'Analyze entire collection';
         if ($scope.field.details) {
           $scope.toggleDetails($scope.field, true);
         }
@@ -93,6 +95,15 @@ app.directive('discoverField', function ($compile) {
           detailsElem.remove();
           $elem.removeClass('active');
         }
+      };
+
+      $scope.toggleFullDetails = function () {
+        $scope.searchButtonText = '';
+
+
+        $timeout(function () {
+          $scope.searchButtonText = 'Analyze entire collection';
+        }, 2000); //update timeout + make pretty
       };
 
       init();

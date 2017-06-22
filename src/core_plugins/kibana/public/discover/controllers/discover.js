@@ -15,6 +15,9 @@ import 'ui/index_patterns';
 import 'ui/state_management/app_state';
 import 'ui/timefilter';
 import 'ui/share';
+import 'angular-aria/angular-aria';
+import 'angular-animate/angular-animate';
+import 'angular-material/angular-material';
 import VisProvider from 'ui/vis';
 import DocTitleProvider from 'ui/doc_title';
 import UtilsBrushEventProvider from 'ui/utils/brush_event';
@@ -31,7 +34,8 @@ import StateProvider from 'ui/state_management/state';
 const app = uiModules.get('apps/discover', [
   'kibana/notify',
   'kibana/courier',
-  'kibana/index_patterns'
+  'kibana/index_patterns',
+  'ngMaterial'
 ]);
 
 uiRoutes

@@ -9,7 +9,7 @@ const app = uiModules.get('apps/discover');
 
 
 
-app.directive('discoverField', function ($compile, $timeout) {
+app.directive('discoverField', function ($compile, $timeout, collectionAnalyticsModal) {
   return {
     restrict: 'E',
     template: html,
@@ -25,7 +25,6 @@ app.directive('discoverField', function ($compile, $timeout) {
     link: function ($scope, $elem) {
       let detailsElem;
       let detailScope;
-
 
       const init = function () {
         $scope.searchButtonText = 'Analyze entire collection';
@@ -97,13 +96,23 @@ app.directive('discoverField', function ($compile, $timeout) {
         }
       };
 
-      $scope.toggleFullDetails = function () {
-        $scope.searchButtonText = '';
+      $scope.toggleFullDetails = function (field) {
 
+        function doVisualization() {
+          //do nothing for now.
+        }
+        const collectionModalOptions = {
+          title : 'Entire Collection Analytics',
+          confirmButtonText : 'Visualize',
+          cancelButtonText : 'Close',
+          onConfirm : doVisualization,
+          field : field
+        };
+        collectionAnalyticsModal(
+          '',
+          collectionModalOptions
+        );
 
-        $timeout(function () {
-          $scope.searchButtonText = 'Analyze entire collection';
-        }, 2000); //update timeout + make pretty
       };
 
       init();

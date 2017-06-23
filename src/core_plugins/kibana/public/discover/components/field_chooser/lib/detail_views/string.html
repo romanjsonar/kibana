@@ -1,4 +1,4 @@
-      <div>
+      <div id="fieldDetail">
         <div class="discover-field-details">
           <h5 ng-show="!field.details.error">Quick Count <kbn-info info="Top 5 values based on documents in the table" placement="right"></kbn-info>
             <span ng-if="!field.details.error" class="small discover-field-details-count">
@@ -51,9 +51,8 @@
           ( {{::warnings.length}} <ng-pluralize count="warnings.length" when="{'1':'warning', 'other':'warnings'}"></ng-pluralize> <i aria-hidden="true" class="fa fa-warning"></i> )
           </span>
       </a>
-      <a
-        ng-click="toggleFullDetails(field)"
+      <md-button
+        ng-click="toggleFullDetails(field, $event)"
         class="sidebar-item-button primary">
-        <span ng-show="searchButtonText == ''"><md-progress-circular md-diameter="20" mode="indeterminate"></md-progress-circular></span>
         {{searchButtonText}}
-      </a>
+      </md-button>

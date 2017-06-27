@@ -34,7 +34,6 @@ import StateProvider from 'ui/state_management/state';
 const app = uiModules.get('apps/discover', [
   'kibana/notify',
   'kibana/courier',
-  'kibana/index_patterns',
   'ngMaterial'
 ]);
 

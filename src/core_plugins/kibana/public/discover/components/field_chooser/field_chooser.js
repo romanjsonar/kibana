@@ -10,6 +10,7 @@ import fieldCalculator from 'plugins/kibana/discover/components/field_chooser/li
 import IndexPatternsFieldListProvider from 'ui/index_patterns/_field_list';
 import uiModules from 'ui/modules';
 import fieldChooserTemplate from 'plugins/kibana/discover/components/field_chooser/field_chooser.html';
+
 const app = uiModules.get('apps/discover');
 
 
@@ -229,6 +230,24 @@ app.directive('discFieldChooser', function ($location, globalState, config, $rou
         } else {
           delete field.details;
         }
+      };
+
+      $scope.computeCollectionDetails = function (field, hits) {
+        field.details = Object.assign(
+          {
+            visualizeUrl: field.visualizable ? getVisualizeUrl(field) : null,
+          },
+          fieldCalculator.getFieldValueCounts({
+            hits: hits,
+            field: field,
+            count: 10,
+            grouped: false
+          }),
+        );
+        _.each(field.details.buckets, function (bucket) {
+          bucket.display = field.format.convert(bucket.value);
+        });
+        return field;
       };
 
       function getFields() {

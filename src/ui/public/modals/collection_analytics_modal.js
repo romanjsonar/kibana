@@ -38,7 +38,6 @@ module.factory('collectionAnalyticsModal', function ($rootScope, $compile) {
     options.onClose = customOptions.onClose || options.onCancel;
 
     const confirmScope = $rootScope.$new();
-
     confirmScope.message = message;
     confirmScope.confirmButtonText = options.confirmButtonText;
     confirmScope.cancelButtonText = options.cancelButtonText;
@@ -56,6 +55,8 @@ module.factory('collectionAnalyticsModal', function ($rootScope, $compile) {
       destroy();
       options.onClose();
     };
+    confirmScope.field = customOptions.field;
+
 
     function showModal(confirmScope) {
       const modalInstance = $compile(template)(confirmScope);
@@ -93,6 +94,7 @@ module.factory('collectionAnalyticsModal', function ($rootScope, $compile) {
         showModal(confirmQueue.pop());
       }
     }
+
   };
 
 });

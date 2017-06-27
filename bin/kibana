@@ -20,5 +20,5 @@ if [ ! -x "$NODE" ]; then
   echo "unable to find usable node.js executable."
   exit 1
 fi
-echo "starting kibana"
+
 exec "${NODE}" $NODE_OPTIONS --inspect "${DIR}/src/cli" ${@}
